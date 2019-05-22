@@ -36,5 +36,7 @@ def sum_array(nums_array)
   nums_array.inject{|sum,num| sum+num}
 end
 
-def add_s()
+def add_s(array)
+  array.each_with_index |word, index|
+    word<<"s" unless index ==1
 end
