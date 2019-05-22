@@ -38,5 +38,5 @@ end
 
 def add_s(array)
   array.each_with_index |word, index|
-    word.push("s")  unless index ==1
+    word[word.length] ="s" unless index ==1
 end
